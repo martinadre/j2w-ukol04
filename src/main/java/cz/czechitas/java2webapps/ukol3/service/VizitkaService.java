@@ -41,7 +41,7 @@ public class VizitkaService {
                     "70800 Ostrava-Pustkovec",
                     "monika@czechitas.cs",
                     "+420 800123456",
-                    "www.czechitas.cz"
+                    null
             )
     );
     seznamVizitek.add(
@@ -86,4 +86,9 @@ public class VizitkaService {
   public Vizitka getById(int id) {
     return seznamVizitek.get(id);
   }
+
+  public void append(Vizitka vizitka) {seznamVizitek.add(vizitka);}
+  public void deleteById(int id) {
+        seznamVizitek.remove(id);
+    }
 }
